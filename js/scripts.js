@@ -27,8 +27,8 @@ closeBtn.addEventListener('click', function(){
 moreInfoText.addEventListener('mouseenter',function(event){
   //code goes here
   tooltip.style.opacity = '1';
-  var x = event.pageX;     // Get the horizontal coordinate
-  var y = event.pageY;     // Get the vertical
+  var x = event.screenX;     // Get the horizontal coordinate
+  var y = event.screenY;     // Get the vertical
   console.log(y);
   tooltip.style.top = y + 'px';
   tooltip.style.right = x + 'px';

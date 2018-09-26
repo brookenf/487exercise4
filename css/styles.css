@@ -20,6 +20,7 @@
 
 #more-info{
   color: #129d34;
+  font-weight: bolder;
 }
 
 #tooltip{
@@ -30,10 +31,24 @@
   position: absolute;
   top: 0;
   right: 0;
-  background: white;
+  border-radius: 5px;
+  background: #eee;
   width: 150px;
   height: 150px;
-  border: 1px solid;
   box-shadow: 2px 2px 2px 2px #aaa;
   opacity: 0;
+}
+
+/*creating the arrow*/
+#tooltip::before{
+  content : " ";
+  width: 0;
+  height: 0;
+  transform: rotate(180deg);
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #eee;
+  position:absolute;
+  top:-5%;
+  left: 5%;
 }
