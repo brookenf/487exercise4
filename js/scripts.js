@@ -32,10 +32,11 @@ moreInfoText.addEventListener('mouseenter',function(event){
   console.log(y);
   tooltip.style.top = y + 'px';
   tooltip.style.right = x + 'px';
-  tooltip.style.transition = '0.2 ease';
+  tooltip.style.transition = '0.3 ease';
 });
 
 moreInfoText.addEventListener('mouseout', function(){
   console.log('Leaving the mouse');
   tooltip.style.opacity = '0';
+  tooltip.style.transition = '0.3 ease';
 });
